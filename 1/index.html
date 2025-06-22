@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script>
+function krb() {
+            window.open('https://line.me/', '_blank');
+        }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>藤野秀人の株式投資情報</title>
+    <link rel="stylesheet" href="css/tt5.css"> 
+</head>
+<body class="main-document-container">
+     
+
+    <main class="main-content-wrapper-container">
+        <section class="expert-profile-information-section">
+            <h2 class="expert-introduction-greeting-text">皆さん、こんにちは，私は藤野秀人です</h2>
+            
+            <div class="expert-portrait-image-container">
+                <img src="img/1.jpg" alt="藤野秀人のプロフィール写真" class="expert-portrait-professional-image">
+            </div>
+
+            <div class="service-benefits-features-section">
+                <p class="feature-benefit-item-description">現在、多くの人が「先生」を名乗って株式投資を教えていますが、実際にはコースや授業料を売りたいだけです。</p>
+                
+                <p class="feature-benefit-item-description">実際、彼らはコースや授業料を売りたいだけなのです。</p>
+                
+                <p class="feature-benefit-item-description">私は手数料を取りません。</p>
+                
+                <p class="feature-benefit-item-description">私は毎日、個人的に研究し厳選した株式情報を共有しています。シンプルで実用的で、一般投資家の参考に適しています。</p>
+                
+                <p class="feature-benefit-item-description">私のLINEに参加すれば、一円もかかりません。</p>
+                
+                <p class="feature-benefit-item-description">毎日無料で厳選された有益な情報を提供します。</p>
+                
+                <p class="feature-benefit-item-description">誇張せず、騙さず、私たちは真実の情報を提供し、市場理解のお手伝いをします。</p>
+            </div>
+
+            <div class="call-to-action-button-container">
+                <button class="primary-action-button-element" onclick="krb()">
+                    今すぐLINEに参加して、無料株式情報を入手！
+                </button>
+            </div>
+        </section>
+
+        <section class="risk-disclosure-compliance-section">
+            <h3 class="risk-warning-header-title">⚠️ 重要なリスク警告</h3>
+            <p class="risk-disclosure-item-text">本サービスは一般的な市場情報を提供するものであり、投資助言や推奨を構成するものではありません</p>
+            <p class="risk-disclosure-item-text">金融市場にはリスクが存在し、投資元本の一部または全部を失う可能性があります。</p>
+            <p class="risk-disclosure-item-text">掲載されているすべての例は過去のデータ分析に基づくものであり、将来のリターンを保証するものではありません。</p>
+			<p class="risk-disclosure-item-text">投資家は、ご自身のリスク許容度に基づき、慎重に判断を行う必要があります</p>
+			<p class="risk-disclosure-item-text">すべての情報は客観的な事実に基づく記述であり、投資助言を構成するものではありません</p>
+        </section>
+    </main>
+
+    <footer class="footer-legal-information-section">
+        <a href="privacy.html" class="footer-legal-link-element">プライバシーポリシー</a>
+        <a href="terms.html" class="footer-legal-link-element">利用規約</a>
+    </footer>
+
+    <button class="floating-action-button-persistent" onclick="krb()">
+        今すぐ参加して、より良いアドバイスを受け取る
+    </button>
+
+    <script>
+        
+
+        // Prevent zooming on mobile
+        document.addEventListener('gesturestart', function (e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('gesturechange', function (e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('gestureend', function (e) {
+            e.preventDefault();
+        });
+
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.querySelector('.main-document-container').style.opacity = '0';
+            document.querySelector('.main-document-container').style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                document.querySelector('.main-document-container').style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
